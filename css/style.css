@@ -143,7 +143,10 @@ button.navbar-toggler {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg");
 }*/
 .layer-bg {
-  background-image: url("../img/layer-bg-bird.png");
+  background-image: url("../img/layer-bg.png");
+}
+.layer-bird {
+  background-image: url("../img/layer-bird.png");
 }
 
 /*.layer-1 {
@@ -151,8 +154,12 @@ button.navbar-toggler {
   background-position: left bottom;
 }*/
 .layer-1 {
-  background-image: url("../img/layer-one-text.png");
+  background-image: url("../img/layer-one.png");
   background-position: left bottom;
+}
+.layer-text {
+  background-image: url("../img/layer-text.png");
+  background-position: center;
 }
 
 /*.layer-2 {
@@ -179,7 +186,7 @@ button.navbar-toggler {
 }*/
 
 .layer-overlay {
-  background-image: url("../img/layer-overlay.png");
+  background-image: url("../img/layer_overlay.png");
 }
 /*==================================
 about
@@ -535,6 +542,12 @@ transform: translateZ(-110px) rotateY(180deg);
 /* ================================= 
   Media Queries
 ==================================== */
+@media (min-width: 1400px) {
+.layer-1 {
+  background-image: url("../img/layer-one-large.png");
+  background-position: left bottom;
+}
+}
 
 @media (min-width: 1025px) {
   .cube-container:first-child {
