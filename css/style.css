@@ -143,7 +143,7 @@ button.navbar-toggler {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg");
 }*/
 .layer-bg {
-  background-image: url("../img/layer-bg.png");
+  background-image: url("../img/layer-bg-bird.png");
 }
 
 /*.layer-1 {
@@ -151,7 +151,7 @@ button.navbar-toggler {
   background-position: left bottom;
 }*/
 .layer-1 {
-  background-image: url("../img/layer-one.png");
+  background-image: url("../img/layer-one-text.png");
   background-position: left bottom;
 }
 
