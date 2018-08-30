@@ -109,7 +109,7 @@ utilities
 .snip1429 li {
   display: inline-block;
   list-style: outside none none;
-  margin: 0.5em 0.4em;
+  margin: 10px 4px;
   overflow: hidden;
   position: relative;
   border-radius: 3px;
