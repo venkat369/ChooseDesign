@@ -30,7 +30,7 @@
    </head>
    <body>
       <header class="customise-nav">
-         <nav class="navbar navbar-expand-sm  navbar-light fixed-top">
+         <nav class="navbar navbar-expand-sm  navbar-light fixed-top" id="mainNav">
             <div class="col-lg-7">
                <a class="navbar-brand logo" href="#">
                <img src="img/logochoosewhite.png" alt="logo" class="img-fluid logo-lite">
@@ -43,25 +43,25 @@
                </button>
             </div>
             <div class="col-lg-5">
-               <div class="collapse navbar-collapse alt-font" id="collapsibleNavbar">
-                  <ul class="navbar-nav ">
+               <div class="collapse  navbar-collapse   alt-font" id="collapsibleNavbar">
+                  <ul class="navbar-nav snip1429">
                      <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#home">Home</a>
+                        <a class="nav-link page-scroll js-scroll-trigger " href="#home">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">About</a>
+                        <a class="nav-link page-scroll js-scroll-trigger" href="#about">About</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#service">Servivces</a>
+                        <a class="nav-link page-scroll js-scroll-trigger" href="#service">Servivces</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#recentworks">Recent Works</a>
+                        <a class="nav-link page-scroll js-scroll-trigger" href="#recentworks">Recent Works</a>
                      </li>
                      <li class="nav-item">
                         <!-- <a class="nav-link page-scroll" href="#">Clients</a> -->
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link page-scroll " href="#contact">Contact</a>
+                        <a class="nav-link page-scroll js-scroll-trigger" href="#contact">Contact</a>
                      </li>
                   </ul>
                </div>
@@ -71,10 +71,11 @@
       <section id="home">
          <div id='hero'>
             <div class='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
-            <div class='layer-1 layer' data-depth='0.20' data-type='parallax'></div>
-             <div class='layer-bird layer' data-depth='0.25' data-type='parallax'></div><!--added-->
+            <div class='layer-1 layer' data-depth='0.18' data-type='parallax'></div>
+             <div class='layer-bird layer' data-depth='0.23' data-type='parallax'></div><!--added-->
 
-            <div class='layer-text layer' data-depth='0.30' data-type='parallax'></div><!--added-->
+            <div class='layer-text-one  layer' data-depth='0.27' data-type='parallax'></div><!--added-->
+            <div class='layer-text-two layer' data-depth='0.35' data-type='parallax'></div><!--added-->
 
             <div class='layer-2 layer' data-depth='0.55' data-type='parallax'></div>
             <div class='layer-3 layer' data-depth='0.80' data-type='parallax'></div>
@@ -356,8 +357,10 @@
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.min.js"></script>
+      <script src="js/scrolling-nav.js"></script>
       <!--js files-->
-      <script>
+      <!-- <script>
          $('a.page-scroll').click(function() {
                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
                  var target = $(this.hash);
@@ -371,7 +374,7 @@
                }
              });
          
-      </script>
+      </script> -->
       <script type="text/javascript">
          $(function() {
            var header = $(".customise-nav");
@@ -419,17 +422,6 @@
          }).call(this);
          
       </script>
-     <!--  <script>
-         // Add active class to the current button (highlight it)
-         var header = document.getElementById("myDIV");
-         var btns = header.getElementsByClassName("btn");
-         for (var i = 0; i < btns.length; i++) {
-           btns[i].addEventListener("click", function() {
-             var current = document.getElementsByClassName("active");
-             current[0].className = current[0].className.replace(" active", "");
-             this.className += " active";
-           });
-         }
-      </script> -->
+     
    </body>
 </html>
