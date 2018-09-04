@@ -337,6 +337,12 @@ about
 /*====================================
 service
 ====================================*/
+.portfolio-bg{
+  background-image: url("../img/parallax-bg18.jpg");
+      background-size: cover;
+    background-repeat: no-repeat;
+
+}
 .serviceBox{
     padding-bottom: 20px;
     text-align: center;
