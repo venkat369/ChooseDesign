@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
 
+
 /* ===================================
     Reset
 ====================================== */
@@ -65,6 +66,43 @@ utilities
 }
  #about,#recentworks {
   background-color: #fff;
+}
+/*=====================================
+back to top
+===============================*/
+   #back-to-top .top {
+    z-index: 999;
+    position: fixed;
+    margin: 0px;
+    color: #fff;
+    transition: all .5s ease-in-out;
+    position: fixed;
+    bottom: 105px;
+    right: 15px;
+    border-radius: 3px;
+    z-index: 999;
+    background: transparent;
+    font-size: 14px;
+    /* background: #84ba3f; */
+    background: #0babc7;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+#back-to-top i {
+    padding-top: 2px;
+    font-size: 20px;
+}
+#back-to-top span {
+    display: block;
+    line-height: 8px;
+    font-size: 11px;
+}
+.top-btn-remove{
+   display: none;
+}
+.top-btn-add{
+   display: block ;
 }
 
 /* ===================================

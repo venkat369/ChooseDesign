@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="css/animate.min.css">
       <link rel="stylesheet" href="css/flaticon.css">
       <link rel="stylesheet" href="fontawesome5/css/all.min.css">
+      <link rel="stylesheet" href="fonts/elegant_font/HTML_CSS/style.css">
       <link rel="stylesheet" href="css/style.css">
       <!-- css files-->
       <style>
@@ -357,6 +358,9 @@
             </div>
          </div>
       </section>
+      <div id="back-to-top" class="top-btn-remove"><a class="top arrow " href="#top"><i class="fa fa-angle-up"></i> <span>TOP</span></a></div>
+
+
       <!-- js files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
@@ -379,6 +383,20 @@
              });
          
       </script> -->
+       <script type="text/javascript">
+         POTENZA.goToTop = function () {
+  var $goToTop = $('#back-to-top');
+      $goToTop.hide();
+        $window.scroll(function(){
+          if ($window.scrollTop()>100) $goToTop.fadeIn();
+          else $goToTop.fadeOut();
+      });
+    $goToTop.on("click", function () {
+        $('body,html').animate({scrollTop:0},1000);
+        return false;
+    });
+  }
+      </script>
       <script type="text/javascript">
          $(function() {
            var header = $(".customise-nav");
@@ -399,6 +417,17 @@
                    header.removeClass('logo').addClass("logo-add");
                } else {
                    header.removeClass("logo-add").addClass('logo');
+               }
+           });
+         });
+             $(function() {
+           var header = $(".top-btn-remove");
+           $(window).scroll(function() {
+               var scroll = $(window).scrollTop();
+               if (scroll >= 350) {
+                   header.removeClass('top-btn-remove').addClass("top-btn-add");
+               } else {
+                   header.removeClass("top-btn-add").addClass('top-btn-remove');
                }
            });
          });
@@ -426,6 +455,7 @@
          }).call(this);
          
       </script>
+     
      
    </body>
 </html>
