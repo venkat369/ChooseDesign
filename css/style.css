@@ -685,6 +685,9 @@ transform: translateZ(-110px) rotateY(180deg);
 /*=================
 5.contact
 ==========*/
+#contact h5 {
+    line-height: 30px;
+}
 .contact-box i {
     font-size: 40px;
 }

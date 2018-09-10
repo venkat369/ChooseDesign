@@ -326,6 +326,7 @@
                <div class="col-lg-3 col-md-3">
                   <div class="contact-box text-center">
                      <i class="fas fa-location-arrow "></i>
+                      <h5>Address</h5>
                      <address>
                         503,sai ganga enclave, near Gurudwar temple,
                         ameerpet, Hyd-500016.
@@ -335,6 +336,7 @@
                <div class="col-lg-3 col-md-3">
                   <div class="contact-box text-center">
                      <i class="fas fa-mobile-alt"></i>
+                      <h5>Let's Talk</h5>
                      <address>
                         +91 9573636393.
                      </address>
@@ -342,7 +344,8 @@
                </div>
                <div class="col-lg-3 col-md-3">
                   <div class="contact-box text-center">
-                     <i class="fas fa-at"></i>
+                     <i class="fas fa-envelope"></i>
+                      <h5>Email Me</h5>
                      <address>
                         venkateshpataballa@gmail.com.
                      </address>
@@ -383,6 +386,7 @@
              });
          
       </script> -->
+          <!--back to tp script-->
        <script type="text/javascript">
          POTENZA.goToTop = function () {
   var $goToTop = $('#back-to-top');
@@ -397,6 +401,21 @@
     });
   }
       </script>
+          <!-- back to top script end-->
+          <!-- hide menu on scroll-->
+          <script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("mainNav").style.top = "0";
+  } else {
+    document.getElementById("mainNav").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+          <!-- hide menu on scroll end-->
       <script type="text/javascript">
          $(function() {
            var header = $(".customise-nav");
