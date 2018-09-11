@@ -720,7 +720,12 @@ transform: translateZ(-110px) rotateY(180deg);
 .fa-behance:hover{
   color: #0056ff;
 }
-
+.fa-codepen:hover {
+    color: #303c42;
+}
+.fa-github:hover {
+    color: #652f51;
+}
 /* ================================= 
   Media Queries
 ==================================== */
