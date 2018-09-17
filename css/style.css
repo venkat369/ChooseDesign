@@ -108,7 +108,7 @@ back to top
 /* ===================================
     navbar
 ====================================== */
-.customise-nav{
+.customise-nav, .customise-nav .active {
 	background: transparent;
 }
 .navbar-brand img{ 
@@ -130,7 +130,7 @@ back to top
 .customise-nav-add .navbar-light .navbar-nav .nav-link:hover {
     color: white;
 }
-.active {
+.customise-nav-add .active {
     background-color: #0babc7;
     color: white !important;
     
