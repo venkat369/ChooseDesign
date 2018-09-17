@@ -64,7 +64,7 @@ utilities
 .pt-rs-80px {
     padding: 80px 0;
 }
- #about,#recentworks {
+ #about,#recentworks,#contact {
   background-color: #fff;
 }
 /*=====================================
@@ -365,9 +365,10 @@ button.navbar-toggler {
 ==================================*/
 .bg-about{
    
- 	background-image: url("../img/about.png");
+ 	background-image: url("../img/aboutflip.png");
  	    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center; 
   
 }
 a.cv-button:hover{
@@ -695,6 +696,14 @@ transform: translateZ(-110px) rotateY(180deg);
 /*=================
 5.contact
 ==========*/
+.contact-bg{
+   
+  background-image: url("../img/about.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+   
+  
+}
 #contact h5 {
     line-height: 30px;
 }
