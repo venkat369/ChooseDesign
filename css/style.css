@@ -361,7 +361,7 @@ button.navbar-toggler {
   background-image: url("../img/layer_overlay.png");
 }
 /*==================================
-about
+2.about
 ==================================*/
 .bg-about{
    
@@ -370,10 +370,20 @@ about
     background-repeat: no-repeat;
   
 }
-
+a.cv-button:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+a.cv-button {
+    background: #6f6f6f;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
 
 /*====================================
-service
+3.service
 ====================================*/
 .portfolio-bg{
   background-image: url("../img/parallax-bg18.jpg");
