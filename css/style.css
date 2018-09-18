@@ -53,6 +53,24 @@ ul, ol, dl {list-style-position: outside; margin-bottom: 25px}
 /*==================================
 utilities
 ==================================*/
+.typo-l{
+      border-left: 3px solid #0babc7;
+    padding-left: 20px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    padding: 6px 0 6px 15px;
+}
+.typo-b{
+      border: 1px solid #f2f2f2;
+    border-bottom: 2px solid #0babc7;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.m-height-100vh{
+  min-height: 100vh;
+}
 .pt-rs-150px{
 	padding-top: 150px;
 	padding-bottom: 150px;
@@ -116,8 +134,8 @@ back to top
 
 }
 .customise-nav-add .navbar{
-	background: white;
-	-webkit-box-shadow: 0 10px 6px -6px #777;
+	   background: url("../img/bgwhitepattern.jpg") no-repeat center ;
+	   -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777;
 }
@@ -363,6 +381,7 @@ button.navbar-toggler {
 /*==================================
 2.about
 ==================================*/
+
 .bg-about{
    
  	background-image: url("../img/aboutflip.png");
@@ -698,11 +717,10 @@ transform: translateZ(-110px) rotateY(180deg);
 ==========*/
 .contact-bg{
    
-  background-image: url("../img/about.png");
+  background-image: url("../img/mountainbg.png");
   background-size: cover;
   background-repeat: no-repeat;
-   
-  
+  background-position: bottom left;   
 }
 #contact h5 {
     line-height: 30px;
