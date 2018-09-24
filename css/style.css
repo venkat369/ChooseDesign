@@ -409,6 +409,7 @@ a.cv-button {
   background-image: url("../img/parallax-bg18.jpg");
       background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 
 }
 .serviceBox{
