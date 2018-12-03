@@ -9,6 +9,7 @@
 
       <link rel="shortcut icon" type="image/x-icon" href="img/fav.png">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--<meta name = "viewport" content = "width=device-width; initial-scale = 1; maximum-scale=1; user-scalable = no;" />-->
       <!-- css files-->
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/animate.min.css">
@@ -31,9 +32,24 @@
          .logo-add .logo-lite {
          display:none;
          }
+         
+         .preloader{ position:fixed;
+ left:0px;
+  top:0px;
+   width:100%;
+    height:100%;
+     z-index:999999; 
+     background-color:#e4f0f0; 
+     background-position:center center; 
+     background-repeat:no-repeat; 
+     background-image:url(https://i.gifer.com/AGNB.gif);
+ }
+
       </style>
    </head>
    <body>
+      <!-- Preloader -->
+	<div class="preloader"></div>
       <header class="customise-nav">
          <nav class="navbar navbar-expand-sm  navbar-light fixed-top" id="mainNav">
 <div class="col-lg-10 col-md-11 mx-auto">
@@ -494,6 +510,17 @@ var currentScrollPos = window.pageYOffset;
          
       </script>
      
-     
+     <script>
+     //Hide Loading Box (Preloader)
+		function handlePreloader() {
+			if ($('.preloader').length) {
+				$('.preloader').delay(200).fadeOut(500);
+			}
+		}
+        $(window).on('load', function () {
+			handlePreloader();
+			//enableMasonry();
+		});
+         </script>
    </body>
 </html>
